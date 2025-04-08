@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="prompt">
+        <h1 id="promptText">Current Weather and 5-day Forecast</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn">Get Weather</button>
+    </div>
+    
+    <div id="result">
+        <div id="mainHead">
+            <div id="cityDate"></div>
+            <div id="scaleSelect">
+                <button id="celsiusBtn">°C</button>
+                <button id="farenheitBtn">°F</button>
+            </div>
+        </div>
+        <div id="current">
+            <div id="iconDesc"></div>
+            <div id="info">
+                <div id="temp"></div>
+                <div id="range"></div>
+            </div>
+            <div id="windHumid"></div>
+        </div>
+        
+        <div id="fiveDay">
+            <div id="fiveHead"></div>
+            <div id="forecast">
+                <div class="forecastObj" id="day1"></div>
+                <div class="forecastObj" id="day2"></div>
+                <div class="forecastObj" id="day3"></div>
+                <div class="forecastObj" id="day4"></div>
+                <div class="forecastObj" id="day5"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

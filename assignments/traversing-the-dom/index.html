@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal Lab</title>
+    <style>
+        .clue { color: blue; }
+        #treasure { padding: 10px; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome to the DOM Traversal Lab!</h1>
+        <p class="clue">Clue 1: Find the treasure!</p>
+        <p class="clue">Clue 2: Look for the hidden message.</p>
+        <div id="treasure">You found the treasure!</div>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <script>
+        // task 1
+        var treasure = document.getElementById('treasure');
+        treasure.style.backgroundColor = 'yellow';
+        // task 2
+        var clues = document.getElementsByClassName('clue');
+        for (var i = 0; i < clues.length; i++) {
+            clues[i].textContent = 'Clue ' + (i + 1) + ': Updated text!';
+        }
+        // task 3
+        var treasureParent = treasure.parentNode;
+        treasureParent.style.border = '2px solid red';
+        // task 4
+        var container = document.getElementById('container');
+        var firstChild = container.childNodes[1]; // Skipping text nodes
+        firstChild.style.fontSize = '24px';
+        // task 5
+        var container = document.getElementById('container');
+        var firstChild = container.childNodes[1]; // Skipping text nodes
+        firstChild.style.fontSize = '24px';
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    background-color: #FFFBEE;
+    font-family: 'Lexend', serif;
+    align-items: center;
+}
+
+#prompt {
+    background-color: #84C7D4;
+
+}
+
+#result {
+    background-color: #84C7D4;
+}
+
+button {
+    background-color: #FD8B51;
+    border-style: none;
+    border-radius: 32px;
+    font-family: 'Lexend', serif;
+    font-size: 16px;
+    padding: 16px 20px;
+}
+
+#cityInput {
+    font-family: 'Lexend', serif;
+    font-size: 16px;
+}
+
+#fiveDay {
+    display: inline;
+}
