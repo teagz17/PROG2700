@@ -1,0 +1,29 @@
+.hero {
+    height: 100vh;
+    background: url('../images/background.jpg') no-repeat center center;
+    background-size: cover;
+    font-size: calc(1rem + 1vw); /* scalable font */
+}
+
+.cardGrid {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.row, .modalPrompt {
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    max-width: 640px;
+}
+
+.modalPrompt {
+    flex-direction: column;
+    margin: auto;
+    gap: 24px;
+    max-width: 240px;
+    align-items: center;
+    padding-bottom: 24px;
+}
