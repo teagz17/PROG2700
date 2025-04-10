@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <title>RideShare: Home</title>
+</head>
+<body>
+    <header>
+      <h1>
+        <span id="font-orange">NSCC</span>Journey
+      </h1>
+    </header>
+    <main>
+      <div class="main-container">
+        <div class="upload-section">
+            <input type="file" id="fileUpload" accept=".txt">
+            <label for="fileUpload" class="button">Upload Routes</label>
+        </div>
+        <form id="routeForm">
+            <input type="text" id="routeId" placeholder="Route ID" required>
+            <input type="text" id="shortName" placeholder="Short Name" required>
+            <input type="text" id="longName" placeholder="Long Name">
+            <button type="submit">Add Route</button>
+        </form>
+        <div id="tableContainer">
+            <table id="routesTable">
+                <thead>
+                    <tr>
+                        <th>Route ID</th>
+                        <th>Short Name</th>
+                        <th>Long Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="routesBody"></tbody>
+            </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section id="footer-Logo">
+        <h1>
+          <span id="font-orange">Ride</span>Share
+        </h1>
+        <p>
+          <span id="font-orange">©</span>2024
+        </p>
+      </section>
+      <section id="footer-links">
+        <button type="button" id="about" href="#">About</button>
+        <button type="button" id="faq" href="#">FAQ</button>
+        <button type="button" id="privacy" href="#">Privacy</button>
+        <button type="button" id="terms" href="#">Terms</button>
+        <button type="button" id="careers" href="#">Careers</button>
+      </section>
+      <section id="footer-contact">
+        <h3>
+          Contact Us<span id="font-orange">:</span>
+        </h3>
+        <h3>
+          support<span id="font-orange">@</span>rideshare.com
+        </h3>
+        <h3>
+          902<span id="font-orange">-</span>XXX<span id="font-orange">-</span>XXXX
+        </h3>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+  </html>
+  
